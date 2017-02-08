@@ -8,14 +8,13 @@ public class OddNumWords {
 		//this is the string used to find is leter is;
 		String[] tstStringArray = {"abcdddd","abcdddd","abc","abc","abc","de","abc","de","abc","de","de"}; //The in put words
 		String[] myStringArray = new String[tstStringArray.length]; //Array to store only once if the word is repeated.
-		//String str = new String();
+
 		int chrCount = 0,chrPos =-1,insPos=0;
-		int[] myIntArray = new int[tstStringArray.length];
-		// TODO Auto-generated method stub
+		int[] myIntArray = new int[tstStringArray.length]; //Array to store the number of repeatationa.
+
 		for (int i=0; i< tstStringArray.length;i++)
 		{
-			//str=tstStringArray[i];
-			//System.out.println(i+":"+str);
+
 			chrCount=0;
 			chrPos =-1;
 			for (int j=0;j<myStringArray.length;j++)
@@ -47,7 +46,7 @@ public class OddNumWords {
 				System.out.println(myStringArray[k]+" -->" +myIntArray[k]);
 			}
 		}
-		System.out.println("Bye");
+		//System.out.println("Bye");
 
 	}
 
